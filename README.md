@@ -53,13 +53,13 @@ frontend/
 ### Prerequisites
 
 - Node.js and npm installed (Node.js v18+ recommended)
-- Backend API running (not included here)
+- Backend API running
 
 ### Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/task-manager-frontend.git
+git clone https://github.com/HamzaSohail-10/task-manager-frontend.git
 cd task-manager-frontend
 
 # 2. Install dependencies
