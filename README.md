@@ -5,6 +5,7 @@ This is the frontend of a Task Management Web App built using **React.js**, **Re
 ---
 
 ## 📂 Folder Structure & Logic
+```
 frontend/
 ├── src/
 │ ├── components/
@@ -26,6 +27,7 @@ frontend/
 │ └── index.js # React root entry point
 ├── tailwind.config.js # TailwindCSS config
 └── package.json # Project dependencies and scripts
+```
 
 ---
 
