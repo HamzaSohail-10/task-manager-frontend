@@ -11,7 +11,6 @@ const CreateTask = () => {
     deadline: "",
     status: "To Do",
   });
-  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,15 +19,15 @@ const CreateTask = () => {
 
   const validateForm = () => {
     if (!formData.title.trim()) {
-      setError("Title is required.");
+      toast.error("Title is required.");
       return false;
     }
     if (formData.title.length > 100) {
-      setError("Title should not exceed 100 characters.");
+      toast.error("Title should not exceed 100 characters.");
       return false;
     }
     if (formData.description.length > 500) {
-      setError("Description should not exceed 500 characters.");
+      toast.error("Description should not exceed 500 characters.");
       return false;
     }
     return true;
@@ -47,7 +46,6 @@ const CreateTask = () => {
         deadline: "",
         status: "To Do",
       });
-      setError("");
     } catch (err) {
       console.error("Failed to create task:", err);
 
@@ -61,7 +59,6 @@ const CreateTask = () => {
         <h2 className="text-2xl font-bold mb-5 text-center sm:text-left text-gray-900 dark:text-gray-100">
           Create a New Task
         </h2>
-        {error && <p className="text-red-500 mb-3">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-gray-700 dark:text-gray-300 text-sm sm:text-base">
@@ -73,7 +70,7 @@ const CreateTask = () => {
               value={formData.title}
               onChange={handleChange}
               className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              maxLength={100}
+              // maxLength={100}
               required
             />
           </div>
@@ -86,7 +83,7 @@ const CreateTask = () => {
               value={formData.description}
               onChange={handleChange}
               className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              maxLength={500}
+              // maxLength={500}
               rows={3}
               required
             />
