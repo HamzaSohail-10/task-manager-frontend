@@ -5,6 +5,7 @@ This is the frontend of a Task Management Web App built using **React.js**, **Re
 ---
 
 ## 📂 Folder Structure & Logic
+```
 frontend/
 ├── src/
 │ ├── components/
@@ -26,6 +27,7 @@ frontend/
 │ └── index.js # React root entry point
 ├── tailwind.config.js # TailwindCSS config
 └── package.json # Project dependencies and scripts
+```
 
 ---
 
@@ -53,13 +55,13 @@ frontend/
 ### Prerequisites
 
 - Node.js and npm installed (Node.js v18+ recommended)
-- Backend API running (not included here)
+- Backend API running
 
 ### Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/task-manager-frontend.git
+git clone https://github.com/HamzaSohail-10/task-manager-frontend.git
 cd task-manager-frontend
 
 # 2. Install dependencies
