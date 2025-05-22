@@ -69,3 +69,8 @@ npm install
 
 # 3. Start the development server
 npm start
+
+---
+
+### Loom Video Link
+https://www.loom.com/share/4e47b1c7dd434fabb5cda15fcc25f7bb?sid=b9059327-a1d3-4b71-962f-1da445bba041
