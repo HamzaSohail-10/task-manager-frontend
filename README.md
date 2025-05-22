@@ -69,7 +69,7 @@ npm install
 
 # 3. Start the development server
 npm start
-
+```
 ---
 
 ### Loom Video Link
